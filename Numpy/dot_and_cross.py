@@ -7,7 +7,7 @@ N = int(input().split())
 A = np.array([input().split() for _ in range(N)], int)
 B = np.array([input().split() for _ in range(N)], int)
 
-# Matris çarpımıı bul
+# Matris çarpımı bul
 result = np.dot(A, B)
 
 # Sonucu yazdır
