@@ -6,22 +6,16 @@ import random
 import re
 import sys
 
-# countingSort fonksiyonu verilen dizideki her bir öğenin tekrar sayısını hesaplar ve bu sayıları yazdırır.
 def countingSort(arr):
     # Her bir öğenin tekrar sayısını saklamak için bir liste oluşturuyoruz.
-    counts = [0] * 100  # Problemde belirtilen maksimum sayı 0 ile 99 arasındadır.
+    counts = [0] * 100  # Problemin belirtildiği gibi, öğeler 0 ile 99 arasında olabilir.
 
     # Diziyi tarayarak her bir öğenin tekrar sayısını hesaplıyoruz.
     for num in arr:
         counts[num] += 1
 
-    # Her bir öğenin tekrar sayısını sırayla yazdırıyoruz.
-    for i in range(100):
-        print(counts[i], end=" ")
-
-# Örnek bir dizi
-arr = [1, 1, 3, 2, 1]
-countingSort(arr)
+    # Her bir öğenin tekrar sayısını içeren diziyi döndürüyoruz.
+    return counts
 
 # Ana programın başlangıcı
 if __name__ == '__main__':
