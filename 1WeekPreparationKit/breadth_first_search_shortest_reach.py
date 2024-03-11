@@ -1,5 +1,4 @@
-# *************DAY6: MOCK TESTS: Breadth-First Search: Shortest Reach **************
-
+# ************ DAY6: MOCK TESTS: Breadth-First Search: Shortest Reach ************************
 
 from collections import deque
 
